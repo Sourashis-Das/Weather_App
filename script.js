@@ -11,7 +11,7 @@ const location_not_found = document.querySelector('.location-not-found');
 const weather_body = document.querySelector('.weather-body');
 
 async function checkWeather(city){
-    const api_key = "ff86d89ec172eaf71da8aff47758e1d2";
+    const api_key = "33e42b6daca1466217ef50ed9726a5ac";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`;
 
     const weather_data = await fetch(`${url}`).then(response => response.json());
